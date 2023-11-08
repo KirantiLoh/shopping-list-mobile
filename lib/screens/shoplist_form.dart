@@ -27,7 +27,7 @@ class _ShopFormPageState extends State<ShopFormPage> {
           backgroundColor: Colors.indigo,
           foregroundColor: Colors.white,
         ),
-        drawer: const LeftDrawer(),
+        endDrawer: const LeftDrawer(),
         // TODO: Tambahkan drawer yang sudah dibuat di sini
         body: Form(
             key: _formKey,
@@ -149,8 +149,8 @@ class _ShopFormPageState extends State<ShopFormPage> {
                                   );
                                 },
                               );
+                              _formKey.currentState!.reset();
                             }
-                            _formKey.currentState!.reset();
                           },
                           child: const Text(
                             "Save",
